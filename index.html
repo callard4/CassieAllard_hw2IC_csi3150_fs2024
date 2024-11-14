@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive ABCs of CSS Technology Website</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Welcome to the Interactive ABCs of CSS Technology learning Website
+      </h1>
+      <p>
+        Click on the buttons below to reveal and learn the CSS technology
+        features of the corresponding letters
+      </p>
+
+      <div id="images" class="images">
+        <div id="info-container-a" class="info hidden">
+          <img id="info-image-a" src="" alt="CSS Image A" />
+          <div id="info-content-a"></div>
+          
+          <button class="hidden-button" onclick="hideInfo('A')">
+            Hide Result
+          </button>
+        </div>
+        <div id="info-container-b" class="info hidden">
+          <img id="info-image-b" src="" alt="CSS Image B" />
+          <div id="info-content-b"></div>
+          <button class="hidden-button" onclick="hideInfo('B')">
+            Hide Result
+          </button>
+        </div>
+        <div id="info-container-c" class="info hidden">
+          <img id="info-image-c" src="" alt="CSS Image C" />
+          <div id="info-content-c"></div>
+          <button class="hidden-button" onclick="hideInfo('C')">
+            Hide Result
+          </button>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button onclick="displayInfo('A')">A</button>
+        <button onclick="displayInfo('B')">B</button>
+        <button onclick="displayInfo('C')">C</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
